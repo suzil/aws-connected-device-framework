@@ -150,8 +150,8 @@ Resources:
           APP_CONFIG: !Ref ApplicationConfigurationOverride
           ASSETLIBRARY_API_FUNCTION_NAME: !Ref AssetLibraryFunctionName
           PROVISIONING_API_FUNCTION_NAME: !Ref ProvisioningFunctionName
-          AWS_S3_CRL_BUCKET: !If [BucketProvided, !Ref BucketName, !Ref AWS::NoValue ]
-          LOGGING_LEVEL: !If [ LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue ]
+          AWS_S3_CRL_BUCKET: !If [BucketProvided, !Ref BucketName, !Ref "AWS::NoValue" ]
+          LOGGING_LEVEL: !If [ LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue" ]
 
       Tracing: Active
 

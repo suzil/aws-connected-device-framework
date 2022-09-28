@@ -310,7 +310,7 @@ Resources:
           AWS_ECS_CLUSTERID: !Ref ECSCluster
           AWS_ECS_SECURITYGROUPID: !Ref FargateContainerSecurityGroup
           AWS_ECS_TASKDEFINITIONARN: !Ref JMeterTaskDefinition
-          LOGGING_LEVEL: !If [ LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue ]
+          LOGGING_LEVEL: !If [ LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue" ]
       Tracing: Active
     DependsOn:
       - LambdaExecutionRole

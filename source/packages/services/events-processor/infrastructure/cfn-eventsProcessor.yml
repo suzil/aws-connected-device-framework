@@ -340,15 +340,15 @@ Resources:
               !Ref "AWS::NoValue",
             ]
           CORS_ORIGIN:
-            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref AWS::NoValue]
+            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref "AWS::NoValue"]
           CUSTOMDOMAIN_BASEPATH:
             !If [
               CustomDomainBasePathProvided,
               !Ref CustomDomainBasePath,
-              !Ref AWS::NoValue,
+              !Ref "AWS::NoValue",
             ]
           LOGGING_LEVEL:
-            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue]
+            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue"]
 
       Tracing: Active
 
@@ -426,15 +426,15 @@ Resources:
               !Ref "AWS::NoValue",
             ]
           CORS_ORIGIN:
-            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref AWS::NoValue]
+            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref "AWS::NoValue"]
           CUSTOMDOMAIN_BASEPATH:
             !If [
               CustomDomainBasePathProvided,
               !Ref CustomDomainBasePath,
-              !Ref AWS::NoValue,
+              !Ref "AWS::NoValue",
             ]
           LOGGING_LEVEL:
-            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue]
+            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue"]
       VpcConfig:
         Fn::If:
           - DeployInVPC
@@ -472,15 +472,15 @@ Resources:
               !Ref "AWS::NoValue",
             ]
           CORS_ORIGIN:
-            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref AWS::NoValue]
+            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref "AWS::NoValue"]
           CUSTOMDOMAIN_BASEPATH:
             !If [
               CustomDomainBasePathProvided,
               !Ref CustomDomainBasePath,
-              !Ref AWS::NoValue,
+              !Ref "AWS::NoValue",
             ]
           LOGGING_LEVEL:
-            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue]
+            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue"]
       Tracing: Active
 
       VpcConfig:
@@ -573,15 +573,15 @@ Resources:
               !Ref "AWS::NoValue",
             ]
           CORS_ORIGIN:
-            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref AWS::NoValue]
+            !If [CorsOriginProvided, !Ref CorsOrigin, !Ref "AWS::NoValue"]
           CUSTOMDOMAIN_BASEPATH:
             !If [
               CustomDomainBasePathProvided,
               !Ref CustomDomainBasePath,
-              !Ref AWS::NoValue,
+              !Ref "AWS::NoValue",
             ]
           LOGGING_LEVEL:
-            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref AWS::NoValue]
+            !If [LoggingLevelProvided, !Ref LoggingLevel, !Ref "AWS::NoValue"]
       Tracing: Active
 
       VpcConfig:
